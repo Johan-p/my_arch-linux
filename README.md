@@ -82,3 +82,11 @@ to check if you have internet ctrl + c to cancel the ping
 `mount /dev/sdb1 /mnt/home`
 
 `mount /dev/sdc1 /mnt/backup`
+
+To check the setup
+
+`lsblk -f`
+
+# install system
+
+`lsblk -f`
