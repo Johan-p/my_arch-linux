@@ -24,26 +24,32 @@
 `In fdisk, "w" (write table to disk)`
 
 
-# create the partitions you need
+# example setup with multiple ssd's:
 
+`/dev/sda1 500M EFI System`
 
-`fdisk /dev/sda`
+`/dev/sda2 4G Linux swab`
 
-list the partition table
-`p`
+`/dev/sda3 100G Linux filesystem`
 
-create a new partition table
-`g`
+`/dev/sda4 361.3G Linux filesystem`
 
-add a new partition
-`n`
+`/dev/sdb1 931.5G Linux filesystem`
 
-enter for first sector and then at last sector
-`+500m`
-this will create a small partition that will use for our boot later on.
+`/dev/sdc1 223.66G Linux filesystem`
 
+# making the filesystem:
 
+`mkfs.fat -F32 /dev/sda1`
 
-`fdisk /dev/sda`
-`fdisk /dev/sda`
-`fdisk /dev/sda`
+`mkswap /dev/sda2`
+
+`swapon /dev/sda2`
+
+`mkfs.ext4 /dev/sda3`
+
+`mkfs.ext4 /dev/sda4`
+
+`mkfs.ext4 /dev/sdb1`
+
+`mkfs.ext4 /dev/sdc1`
