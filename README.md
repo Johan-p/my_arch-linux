@@ -89,4 +89,4 @@ To check the setup
 
 # install system
 
-`lsblk -f`
+`pacstrap /mnt base base-devel vim linux linux-headers linux-firmware`
