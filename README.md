@@ -10,13 +10,21 @@
 
 # lists out the partitions
 `fdisk -l`   
+
 `fdisk /dev/sda`  
+
 `In fdisk, "m" for help`
+
 `In fdisk, "g" for GPT`
+
 `In fdisk, "n" for add new partition`
+
 `In fdisk, "p" for primary partition` (if using MBR instead of GPT)
+
 `In fdisk, "t" to change partition type`
+
 `In fdisk, "w" (write table to disk)`
+
 
 # create the partitions you need
 
