@@ -111,3 +111,44 @@ If you run into key issue's due to running an old version of Arch on your bootst
 `ln -sf /usr/share/zoneinfo/Europe/Amsterdam /etc/localtime`
 
 `hwclock --systohc`
+
+# locale
+
+`vim /etc/locale.gen`
+
+`/en_US enter`
+
+uncomment en_US.UTF-8 UTF-8 :wq to save and exit
+
+Note this might be different for you depending on where you live
+
+
+`locale-gen`
+
+`vim /etc/locale.conf`
+
+`LANG=en_US.UTF-8`
+
+Again might be different for you
+
+https://wiki.archlinux.org/title/Locale#Setting_the_system_locale
+
+# hostname
+
+`vim /etc/hostname`
+
+add a hostname
+
+`vim /etc/hosts`
+
+add the following
+
+`127.0.0.1    localhost`
+
+`::1          localhost`
+
+replace hostname for the hostname you picked
+`127.0.1.1    hostname.localdomain  hostname`
+
+Edit the file with the computer/hostename you want and save & exit
+
