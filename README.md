@@ -62,3 +62,23 @@ to check if you have internet ctrl + c to cancel the ping
 `mkfs.ext4 /dev/sdb1`
 
 `mkfs.ext4 /dev/sdc1`
+
+# Mount the system
+
+`mount /dev/sda3 /mnt`
+
+`mkdir /mnt/boot`
+
+`mkdir /mnt/home`
+
+`mkdir /mnt/media`
+
+`mkdir /mnt/backup`
+
+`mount /dev/sda1 /mnt/boot`
+
+`mount /dev/sda4 /mnt/media`
+
+`mount /dev/sdb1 /mnt/home`
+
+`mount /dev/sdc1 /mnt/backup`
