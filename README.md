@@ -75,8 +75,6 @@ to check if you have internet ctrl + c to cancel the ping
 
 `mkdir /mnt/backup`
 
-`mount /dev/sda1 /mnt/boot`
-
 `mount /dev/sda4 /mnt/media`
 
 `mount /dev/sdb1 /mnt/home`
@@ -122,7 +120,6 @@ uncomment en_US.UTF-8 UTF-8 :wq to save and exit
 
 Note this might be different for you depending on where you live
 
-
 `locale-gen`
 
 `vim /etc/locale.conf`
@@ -133,7 +130,7 @@ Again might be different for you
 
 https://wiki.archlinux.org/title/Locale#Setting_the_system_locale
 
-# hostname
+# hostname and network
 
 `vim /etc/hostname`
 
@@ -148,7 +145,61 @@ add the following
 `::1          localhost`
 
 replace hostname for the hostname you picked
+
 `127.0.1.1    hostname.localdomain  hostname`
 
 Edit the file with the computer/hostename you want and save & exit
 
+`pacman -S networkmanger`
+
+`systemctl enable NetworkManger`
+
+
+# passwd
+
+change the root password
+
+`passwd`
+
+# create user 
+
+replace username with the user you want
+
+`useradd -m -g user -G wheel username`
+
+`pacman -S sudo`
+
+`editor=vim visudo`
+
+uncomment %wheel all=(all) all
+
+# GRUB
+
+`pacman -S grub`
+
+`pacman -S efibootmgr dosfstools os-prober mtools`
+
+`mkdir /boot/EFI`
+
+`mount /dev/sda1 /boot/EFI`
+
+`grub-install --target=x86_64-efi  --bootloader-id=grub_uefi --recheck`
+
+`grub-mkconfig -o /boot/grub/grub.cfg`
+
+
+# Software
+
+`pacman -S git`
+
+# umount and reboot
+
+exit chroot
+
+`exit`
+
+`umount /mnt`
+
+`reboot`
+
+remember to remove the USB stick
