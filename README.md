@@ -1,7 +1,16 @@
-# my_arch-linux
+# Boot Arch Linux from your usb in UEFI mode.
+You might have to disable secure boot in your bios.
+
+https://wiki.archlinux.org/title/Installation_guide
 
 
 # After booting from usb
+
+`ls /sys/firmware/efi/efivars`
+if it doesn't return any errors you have booted in UEFI mode
+
+`ping google.com`
+to check if you have internet ctrl + c to cancel the ping
 
 `timedatectl set-ntp true`
 
