@@ -198,7 +198,7 @@ exit chroot
 
 `exit`
 
-`umount /mnt`
+`umount -l /mnt`
 
 `reboot`
 
