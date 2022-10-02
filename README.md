@@ -94,12 +94,6 @@ If you run into key issue's due to running an old version of Arch on your bootst
 
 `pacman -Sy archlinux-keyring`
 
-# Fstab
-
-`genfstab -U /mnt >> /mnt/etc/fstab`
-
-`vim /mnt/etc/fstab`
-
 # Chroot
 
 `arch-chroot /mnt`
@@ -182,6 +176,16 @@ uncomment %wheel all=(all) all
 `mkdir /boot/EFI`
 
 `mount /dev/sda1 /boot/EFI`
+
+`exit`
+
+# Fstab
+
+`genfstab -U /mnt >> /mnt/etc/fstab`
+
+`vim /mnt/etc/fstab`
+
+`arch-chroot /mnt`
 
 `grub-install --target=x86_64-efi  --bootloader-id=grub_uefi --recheck`
 
