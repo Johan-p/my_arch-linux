@@ -100,8 +100,6 @@ All with gtp
 
 `mkdir /mnt/backup`
 
-`mkdir /mmnt/boot`
-
 `mount /dev/sda4 /mnt/media`
 
 `mount /dev/sdb1 /mnt/home`
