@@ -112,13 +112,6 @@ To check the setup
 
 `lsblk -f`
 
-# Fstab
-
-`genfstab -U /mnt >> /mnt/etc/fstab`
-
-`vim /mnt/etc/fstab`
-
-
 # install system
 
 `pacstrap /mnt base base-devel vim linux linux-headers linux-firmware`
@@ -127,6 +120,13 @@ To check the setup
 If you run into key issue's due to running an old version of Arch on your bootstick run the following first and try pacstrap again
 
 `pacman -Sy archlinux-keyring`
+
+# Fstab
+
+`genfstab -U /mnt >> /mnt/etc/fstab`
+
+`vim /mnt/etc/fstab`
+
 
 # Chroot
 
