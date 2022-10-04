@@ -32,8 +32,33 @@ to check if you have internet ctrl + c to cancel the ping
 
 `In fdisk, "w" (write table to disk)`
 
+`fdisk /dev/sdb`  
+
+`In fdisk, "m" for help`
+
+`In fdisk, "g" for GPT`
+
+`In fdisk, "n" for add new partition`
+
+`In fdisk, "t" to change partition type`
+
+`In fdisk, "w" (write table to disk)`
+
+`fdisk /dev/sdc`  
+
+`In fdisk, "m" for help`
+
+`In fdisk, "g" for GPT`
+
+`In fdisk, "n" for add new partition`
+
+`In fdisk, "t" to change partition type`
+
+`In fdisk, "w" (write table to disk)`
 
 # example setup with multiple ssd's:
+
+All with gtp
 
 `/dev/sda1 500M EFI System`
 
