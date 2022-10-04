@@ -75,15 +75,26 @@ to check if you have internet ctrl + c to cancel the ping
 
 `mkdir /mnt/backup`
 
+`mkdir /mmnt/boot`
+
 `mount /dev/sda4 /mnt/media`
 
 `mount /dev/sdb1 /mnt/home`
 
 `mount /dev/sdc1 /mnt/backup`
 
+`mount /dev/sda1 /boot`
+
 To check the setup
 
 `lsblk -f`
+
+# Fstab
+
+`genfstab -U /mnt >> /mnt/etc/fstab`
+
+`vim /mnt/etc/fstab`
+
 
 # install system
 
@@ -173,21 +184,7 @@ uncomment %wheel all=(all) all
 
 `pacman -S efibootmgr dosfstools os-prober mtools`
 
-`mkdir /boot/EFI`
-
-`mount /dev/sda1 /boot/EFI`
-
-`exit`
-
-# Fstab
-
-`genfstab -U /mnt >> /mnt/etc/fstab`
-
-`vim /mnt/etc/fstab`
-
-`arch-chroot /mnt`
-
-`grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=grub_uefi --recheck`
+`grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=grub_uefi --recheck`
 
 `ls -l /boot/grub`
 
