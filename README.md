@@ -253,10 +253,12 @@ https://i3wm.org/docs/userguide.html
 ```
 $ sudo pacman -S xorg i3 dmenu feh git rxvt-unicode
 $ sudo pacman -S alsa-utils pulseaudio 
-$ sudo pacman -S network-manager-applet 
 $ sudo pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings
 $ sudo systemctl enable lightdm
 ```
+
+$ sudo pacman -S network-manager-applet 
+
 
 ### AMD drivers:
 For Intel or Nvidia drivers see Arch wiki
