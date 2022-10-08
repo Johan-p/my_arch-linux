@@ -286,10 +286,12 @@ mv config ~/.config/i3/config
 $mod shift r
 ```
 
-## urxvt-solarized
+# urxvt-solarized
 [urxvt](https://wiki.archlinux.org/title/rxvt-unicode)
 [Solarized](http://ethanschoonover.com/solarized) dark and light color scheme for urxvt,
 including easy toggling between them.
+
+to update with own config files
 
 ### Setup
 
@@ -347,6 +349,23 @@ sudo pacman -S nemo
 sudo pacman -S ntfs-3g
 ```
 
+# background
+to do add bashscript for background .fehbg
+```
+mkdir Pictures
+mv Background.jpg
+```
+
+## screenshot
+```
+sudo pacman -S deepin-screenshot
+```
+
+# Timeshift
+https://github.com/teejee2008/timeshifthttps://github.com/teejee2008/timeshift
+
+
+# -----------------------------------------------------------------------------------------------------------------------------------------------------
 
 # lock screen setup
 To finish
