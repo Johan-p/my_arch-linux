@@ -321,10 +321,25 @@ Now merge the changes:
 
 And open a new `urxvt` windows in beautiful Solarized colors!
 
+## keepassxc
+
+```
+sudo pacman -S keepassxc
+```
+
 
 #### Additional drivers see lutris page:
 https://github.com/lutris/docs/blob/master/InstallingDrivers.md
 https://github.com/lutris/docs/blob/master/WineDependencies.md
+
+
+# Gaming
+
+```
+sudo pacman -S lutris
+sudo pacman -S steam
+
+```
 
 
 ## lock screen setup
