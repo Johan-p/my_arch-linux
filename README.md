@@ -344,7 +344,7 @@ sudo pacman -S steam
 # file manager
 ```
 sudo pacman -S nemo
-
+sudo pacman -S ntfs-3g
 ```
 
 
