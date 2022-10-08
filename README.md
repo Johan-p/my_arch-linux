@@ -191,11 +191,15 @@ change the root password
 
 # create user 
 
-replace username with the user you want
+replace johan with the username you want
 
-`useradd -m -g user -G wheel username`
+`useradd -m johan`
+
+`passwd johan`
 
 `pacman -S sudo`
+
+`usermod -aG wheel,audio,video,optical,storage johan`
 
 `editor=vim visudo`
 
