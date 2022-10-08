@@ -254,11 +254,8 @@ https://i3wm.org/docs/userguide.html
 $ sudo pacman -S xorg i3 dmenu feh git rxvt-unicode
 $ sudo pacman -S alsa-utils pulseaudio 
 $ sudo pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings
-$ sudo systemctl enable lightdm
+
 ```
-
-$ sudo pacman -S network-manager-applet 
-
 
 ### AMD drivers:
 For Intel or Nvidia drivers see Arch wiki
@@ -268,9 +265,35 @@ $ sudo pacman -S amd-ucode
 $ sudo pacman -S xf86-video-amdgpu
 ```
 
+## start-up i3
+
+```
+echo "exec i3" >> ~/.xinitrc
+sudo pacman -S xorg-server xorg-xinit
+startx
+```
+
+
+
 #### Additional drivers see lutris page:
 https://github.com/lutris/docs/blob/master/InstallingDrivers.md
 https://github.com/lutris/docs/blob/master/WineDependencies.md
+
+
+
+## lock screen setup
+To finish
+
+```
+$ sudo systemctl enable lightdm
+```
+
+### possible add-ons
+
+```
+$ sudo pacman -S network-manager-applet 
+```
+
 
 ## AUR
 Manual steps for AUR packages
