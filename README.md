@@ -341,9 +341,17 @@ sudo pacman -S steam
 
 ```
 
+# file manager
+```
+sudo pacman -S nemo
 
-## lock screen setup
+```
+
+
+# lock screen setup
 To finish
+
+
 
 ```
 $ sudo systemctl enable lightdm
@@ -356,7 +364,7 @@ $ sudo pacman -S network-manager-applet
 ```
 
 
-## AUR
+# AUR
 Manual steps for AUR packages
 
 #### Setup
