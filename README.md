@@ -362,7 +362,7 @@ sudo pacman -S deepin-screenshot
 ```
 
 # Timeshift
-https://github.com/teejee2008/timeshifthttps://github.com/teejee2008/timeshift
+[See Timeshift repo](https://github.com/teejee2008/timeshift)
 
 
 # -----------------------------------------------------------------------------------------------------------------------------------------------------
