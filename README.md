@@ -244,6 +244,11 @@ remember to remove the USB stick
 ## Installing desktop
 
 ### I3 and desktop utils
+https://i3wm.org/docs/userguide.html
+
+* i3 tiling window manager 
+* rxvt-unicode as a customizable terminal emulator
+* LightDM as login screen
 
 ```
 $ sudo pacman -S xorg i3 dmenu feh git rxvt-unicode
