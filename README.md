@@ -279,6 +279,14 @@ startx
 sudo pacman -S firefox
 ```
 
+# i3 config
+
+```
+mv config ~/.config/i3/config
+$mod shift r
+```
+
+
 #### Additional drivers see lutris page:
 https://github.com/lutris/docs/blob/master/InstallingDrivers.md
 https://github.com/lutris/docs/blob/master/WineDependencies.md
