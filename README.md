@@ -1,10 +1,15 @@
-# Boot Arch Linux from your usb in UEFI mode.
-You might have to disable secure boot in your bios.
-
+# Personal Arch installation and setup guide
+see official documentation:
 https://wiki.archlinux.org/title/Installation_guide
 
+## Fresh installation
 
-# After booting from usb
+### Boot Arch Linux from your usb in UEFI mode.
+You might have to disable secure boot in your bios.
+
+
+
+### After booting from usb
 
 `ls /sys/firmware/efi/efivars`
 if it doesn't return any errors you have booted in UEFI mode
@@ -17,7 +22,7 @@ to check if you have internet ctrl + c to cancel the ping
 `timedatectl status`
 
 
-# lists out the partitions
+### lists out the partitions
 `fdisk -l`   
 
 `fdisk /dev/sda`  
@@ -56,7 +61,7 @@ to check if you have internet ctrl + c to cancel the ping
 
 `In fdisk, "w" (write table to disk)`
 
-# example setup with multiple ssd's:
+### example setup with multiple ssd's:
 
 All with gtp
 
@@ -72,7 +77,7 @@ All with gtp
 
 `/dev/sdc1 223.66G Linux filesystem`
 
-# making the filesystem:
+### making the filesystem:
 
 `mkfs.fat -F32 /dev/sda1`
 
@@ -88,7 +93,7 @@ All with gtp
 
 `mkfs.ext4 /dev/sdc1`
 
-# Mount the system
+### Mount the system
 
 `mount /dev/sda3 /mnt`
 
@@ -112,7 +117,7 @@ To check the setup
 
 `lsblk -f`
 
-# install system
+### install system
 
 `pacstrap /mnt base base-devel vim linux linux-headers linux-firmware`
 
@@ -121,24 +126,24 @@ If you run into key issue's due to running an old version of Arch on your bootst
 
 `pacman -Sy archlinux-keyring`
 
-# Fstab
+### Fstab
 
 `genfstab -U /mnt >> /mnt/etc/fstab`
 
 `vim /mnt/etc/fstab`
 
 
-# Chroot
+### Chroot
 
 `arch-chroot /mnt`
 
-## time zone
+### time zone
 
 `ln -sf /usr/share/zoneinfo/Europe/Amsterdam /etc/localtime`
 
 `hwclock --systohc`
 
-# locale
+### locale
 
 `vim /etc/locale.gen`
 
@@ -158,7 +163,7 @@ Again might be different for you
 
 https://wiki.archlinux.org/title/Locale#Setting_the_system_locale
 
-# hostname and network
+### hostname and network
 
 `vim /etc/hostname`
 
@@ -183,13 +188,13 @@ Edit the file with the computer/hostename you want and save & exit
 `systemctl enable NetworkManger`
 
 
-# passwd
+### passwd
 
 change the root password
 
 `passwd`
 
-# create user 
+### create user 
 
 replace johan with the username you want
 
@@ -205,7 +210,7 @@ replace johan with the username you want
 
 uncomment %wheel all=(all) all
 
-# GRUB
+### GRUB
 
 `pacman -S grub`
 
@@ -220,11 +225,11 @@ uncomment %wheel all=(all) all
 `grub-mkconfig -o /boot/grub/grub.cfg`
 
 
-# Software
+### Software
 
 `pacman -S git`
 
-# umount and reboot
+### umount and reboot
 
 exit chroot
 
@@ -235,3 +240,50 @@ exit chroot
 `reboot`
 
 remember to remove the USB stick
+
+## Installing desktop
+
+### I3 and desktop utils
+
+```
+$ sudo pacman -S xorg i3 dmenu feh git rxvt-unicode
+$ sudo pacman -S alsa-utils pulseaudio 
+$ sudo pacman -S network-manager-applet 
+$ sudo pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings
+$ sudo systemctl enable lightdm
+```
+
+### AMD drivers:
+For Intel or Nvidia drivers see Arch wiki
+
+```
+$ sudo pacman -S amd-ucode
+$ sudo pacman -S xf86-video-amdgpu
+```
+
+#### Additional drivers see lutris page:
+https://github.com/lutris/docs/blob/master/InstallingDrivers.md
+https://github.com/lutris/docs/blob/master/WineDependencies.md
+
+## AUR
+Manual steps for AUR packages
+
+#### Setup
+```
+$ sudo pacman -S --needed base-devel git vim
+$ sudo vim /etc/makepkg.conf
+-- change MAKEFLAGS to the following line --
+MAKEFLAGS="-j$(nproc)"
+-------------------------------
+:wq
+```
+
+#### Installing packages
+https://aur.archlinux.org/
+
+```
+$ git clone link
+$ cat PKGBUILD
+$ makepkg -si
+```
+
