@@ -14,29 +14,16 @@ $ sudo pacman -S xorg-server xorg-xinit
 $ sudo pacman -S alsa-utils pulseaudio 
 $ sudo pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings
 $ sudo pacman -S ttf-font-awesome awesome-terminal-fonts neofetch
+
 AMD drivers: for Intel or Nvidia drivers see Arch wiki
 $ sudo pacman -S amd-ucode
 $ sudo pacman -S xf86-video-amdgpu
-sudo pacman -S firefox
-```
 
-## start-up i3
-```
-startx
-```
+$ sudo pacman -S firefox
 
-# -- add script to move all dot files in place --
+Create a `urxvt` extension folder:
+$ mkdir -p ~/.urxvt/ext
 ```
-cp .bashrc ~/.bashrc
-```
-
-## i3 config
-
-```
-mv config ~/.config/i3/config
-$mod shift r
-```
-
 # file manager
 ```
 sudo pacman -S nemo
@@ -45,25 +32,15 @@ mkdir Pictures
 mv Background.jpg /home/johan/Pictures
 sudo pacman -S deepin-screenshot
 ```
-
-
-
-# urxvt-solarized
-[urxvt](https://wiki.archlinux.org/title/rxvt-unicode)
-[Solarized](http://ethanschoonover.com/solarized) 
-dark and light color scheme for urxvt, including easy toggling between them.
-$mod + c
-
-Create a `urxvt` extension folder:
-
-    $ mkdir -p ~/.urxvt/ext
-
-
 ## keepassxc
 ```
 sudo pacman -S keepassxc
 ```
 
+## start-up i3
+```
+startx
+```
 # Gaming
 Install drivers see lutris page:
 https://github.com/lutris/docs/blob/master/InstallingDrivers.md
@@ -74,13 +51,24 @@ sudo pacman -S lutris
 sudo pacman -S steam
 ```
 
+# urxvt-solarized
+[urxvt](https://wiki.archlinux.org/title/rxvt-unicode)
+[Solarized](http://ethanschoonover.com/solarized) 
+dark and light color scheme for urxvt, including easy toggling between them.
+$mod + c
+
+# -- add script to move all dot files in place --
+```
+cp .bashrc ~/.bashrc
+mv config ~/.config/i3/config
+$mod shift r
+```
+
 # Timeshift
 [See Timeshift repo](https://github.com/teejee2008/timeshift)
 ## -to update-
 add build instructions
 ## -to update-
-
-
 
 
 # -left off here-
