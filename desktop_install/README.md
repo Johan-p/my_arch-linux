@@ -25,7 +25,10 @@ sudo pacman -S firefox
 startx
 ```
 
--- add script to move all dot files in place --
+# -- add script to move all dot files in place --
+```
+cp .bashrc ~/.bashrc
+```
 
 ## i3 config
 
@@ -74,19 +77,13 @@ sudo pacman -S steam
 # Timeshift
 [See Timeshift repo](https://github.com/teejee2008/timeshift)
 ## -to update-
-
+add build instructions
 ## -to update-
 
-# fonts
-
-## -to update-
-
-```
-cp .bashrc ~/.bashrc
-```
 
 
-## -left off here-
+
+# -left off here-
 
 # lock screen setup
 To finish
