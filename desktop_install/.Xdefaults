@@ -1,0 +1,23 @@
+Xft.dpi:                        96
+URxvt*termName:                 rxvt-256color
+URxvt*font:                     xft:Inconsolata:size=14
+URxvt.depth:                    0
+URxvt*lineSpace:                1
+URxvt.letterSpace:              -1
+URxvt.iso14755:                 false
+URxvt.iso14755_52:              false
+URxvt*geometry:                 80
+URxvt.scrollBar:                false
+URxvt*loginShell:               true
+URxvt.internalBorder:           10
+URxvt.perl-ext-common:          default,matcher,solarized
+URxvt.keysym.Mod4-c:		perl:solarized:toggle
+URxvt.solarized.default:	dark
+URxvt.keysym.Shift-Control-C:   perl:clipboard:copy
+URxvt.keysym.Shift-Control-V:   perl:clipboard:paste
+URxvt.clipboard.autocopy:       true
+URxvt.cursorBlink:		true
+
+URxvt.url-launcher: /usr/bin/xdg-open
+URxvt.matcher.button: 1
+
