@@ -353,7 +353,7 @@ sudo pacman -S ntfs-3g
 to do add bashscript for background .fehbg
 ```
 mkdir Pictures
-mv Background.jpg
+mv Background.jpg /home/johan/Pictures
 ```
 
 ## screenshot
@@ -363,6 +363,15 @@ sudo pacman -S deepin-screenshot
 
 # Timeshift
 [See Timeshift repo](https://github.com/teejee2008/timeshift)
+to do add build instuctions
+
+
+# fonts
+to do add latest bashrc and i3 config
+
+```
+sudo pacman -S ttf-font-awesome awesome-terminal-fonts
+```
 
 
 # -----------------------------------------------------------------------------------------------------------------------------------------------------
