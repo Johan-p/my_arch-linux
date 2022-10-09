@@ -367,6 +367,7 @@ to do add build instuctions
 
 
 # fonts
+https://fontawesome.com/icons/steam?s=&f=brands
 to do add latest bashrc and i3 config
 
 ```
