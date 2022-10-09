@@ -288,12 +288,12 @@ $mod shift r
 
 # urxvt-solarized
 [urxvt](https://wiki.archlinux.org/title/rxvt-unicode)
-[Solarized](http://ethanschoonover.com/solarized) dark and light color scheme for urxvt,
-including easy toggling between them.
+[Solarized](http://ethanschoonover.com/solarized) 
+dark and light color scheme for urxvt, including easy toggling between them.
+$mod + c
 
-to update with own config files
-
-### Setup
+## -to update-
+####  Setup
 
 Create a `urxvt` extension folder:
 
@@ -322,6 +322,7 @@ Now merge the changes:
     $ xrdb -merge ~/.Xresources
 
 And open a new `urxvt` windows in beautiful Solarized colors!
+## -to update-
 
 ## keepassxc
 
@@ -330,17 +331,16 @@ sudo pacman -S keepassxc
 ```
 
 
-#### Additional drivers see lutris page:
-https://github.com/lutris/docs/blob/master/InstallingDrivers.md
-https://github.com/lutris/docs/blob/master/WineDependencies.md
 
 
 # Gaming
+Install drivers see lutris page:
+https://github.com/lutris/docs/blob/master/InstallingDrivers.md
+https://github.com/lutris/docs/blob/master/WineDependencies.md
 
 ```
 sudo pacman -S lutris
 sudo pacman -S steam
-
 ```
 
 # file manager
@@ -363,12 +363,13 @@ sudo pacman -S deepin-screenshot
 
 # Timeshift
 [See Timeshift repo](https://github.com/teejee2008/timeshift)
-to do add build instuctions
+## -to update-
 
+## -to update-
 
 # fonts
 https://fontawesome.com/icons/steam?s=&f=brands
-to do add latest bashrc and i3 config
+## -to update-
 
 ```
 sudo pacman -S ttf-font-awesome awesome-terminal-fonts neofetch
@@ -377,9 +378,10 @@ vim ~/.bashrc
 # add line for neofetch
 neofetch
 ```
+## -to update-
 
 
-# -----------------------------------------------------------------------------------------------------------------------------------------------------
+## -left off here-
 
 # lock screen setup
 To finish
