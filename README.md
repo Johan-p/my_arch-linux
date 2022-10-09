@@ -370,7 +370,11 @@ to do add build instuctions
 to do add latest bashrc and i3 config
 
 ```
-sudo pacman -S ttf-font-awesome awesome-terminal-fonts
+sudo pacman -S ttf-font-awesome awesome-terminal-fonts neofetch
+vim ~/.bashrc
+
+# add line for neofetch
+neofetch
 ```
 
 
