@@ -77,12 +77,11 @@ Super + shift + r
 #### urxvt-solarized
 Terminal config files and extensions
 
+Dark and light color scheme for urxvt, including easy toggling between them, super + c
+
 [urxvt](https://wiki.archlinux.org/title/rxvt-unicode)
 [Solarized](http://ethanschoonover.com/solarized) 
 
-dark and light color scheme for urxvt, including easy toggling between them.
-
-$mod + c
 
 ## Timeshift Backup & Restore
 In case we break our installation we want a backup and restore solution
