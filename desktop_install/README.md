@@ -59,6 +59,7 @@ sudo pacman -S deepin-screenshot
 
 ### Dotfiles
 Create a `urxvt` extension folder and copy the dot files over.
+
 ```
 $ mkdir -p ~/.urxvt/ext
 git clone repo-link
@@ -70,17 +71,16 @@ cp .Xdefaults ~/.Xdefaults
 cp .urxvt/ext/solarized ~/.urxvt/ext/solarized
 cp .xinitrc ~/.xinitrc
 ```
+### urxvt-solarized
+Terminal config files and extensions
+Dark and light color scheme for urxvt, including easy toggling between them, super + c
+[urxvt](https://wiki.archlinux.org/title/rxvt-unicode)
+[Solarized](http://ethanschoonover.com/solarized) 
 
 #### refresh i3
 Super + shift + r
 
-#### urxvt-solarized
-Terminal config files and extensions
 
-Dark and light color scheme for urxvt, including easy toggling between them, super + c
-
-[urxvt](https://wiki.archlinux.org/title/rxvt-unicode)
-[Solarized](http://ethanschoonover.com/solarized) 
 
 
 ## Timeshift Backup & Restore
