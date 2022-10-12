@@ -14,19 +14,34 @@ $ sudo pacman -S xorg-server xorg-xinit
 $ sudo pacman -S alsa-utils pulseaudio 
 $ sudo pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings
 $ sudo pacman -S ttf-font-awesome awesome-terminal-fonts neofetch
+```
 
 AMD drivers: for Intel or Nvidia drivers see Arch wiki
+
+```
 $ sudo pacman -S amd-ucode
 $ sudo pacman -S xf86-video-amdgpu
+```
 
+Browser
+
+```
 $ sudo pacman -S firefox
+```
 
+Terminal config files and extensions
+
+```
 Create a `urxvt` extension folder:
 $ mkdir -p ~/.urxvt/ext
 ```
 
-# Timeshift
-[See Timeshift repo](https://github.com/teejee2008/timeshift)
+# todo: add instructions for copy location dot files
+
+
+### Timeshift Backup & Restore
+In case we break our installation we want a backup and restore solution
+[Timeshift](https://github.com/teejee2008/timeshift)
 
 Will use the AUR package:
 
@@ -37,28 +52,37 @@ https://aur.archlinux.org/packages/timeshift
 One time settings to enable AUR packages
 
 #### Setup
-
+```
 $ sudo pacman -S --needed base-devel git vim
 $ sudo vim /etc/makepkg.conf
+```
 
 -- change MAKEFLAGS to the following line --
-
+```
 MAKEFLAGS="-j$(nproc)"
+```
 
+Safe and close
+
+```
 :wq
+```
+
 
 #### Installing packages
 https://aur.archlinux.org/
 
+Clone the repository
 
+```
 $ git clone https://aur.archlinux.org/timeshift.git
+```
 
 Always checkc the build file before running the code:
-
+```
 $ cat PKGBUILD
-
 $ makepkg -si
-
+```
 
 
 # file manager
