@@ -30,6 +30,30 @@ $ sudo pacman -S xf86-video-amdgpu
 $ sudo pacman -S firefox
 ```
 
+### file manager
+```
+sudo pacman -S nemo
+sudo pacman -S ntfs-3g
+```
+
+### Wallpaper & screenshot util
+The i3 config file includes a command at startup to show the Background.jpg
+
+```
+mkdir Pictures
+mv Background.jpg /home/johan/Pictures
+```
+
+
+### Screenshot util
+The i3 config file this util is bound to the print screen button
+
+```
+sudo pacman -S deepin-screenshot
+```
+
+
+
 ### start-up i3
 ```
 startx
@@ -63,18 +87,7 @@ dark and light color scheme for urxvt, including easy toggling between them.
 
 $mod + c
 
-
-### Gaming packages
-Install drivers see lutris page:
-https://github.com/lutris/docs/blob/master/InstallingDrivers.md
-https://github.com/lutris/docs/blob/master/WineDependencies.md
-
-```
-sudo pacman -S lutris
-sudo pacman -S steam
-```
-
-### Timeshift Backup & Restore
+## Timeshift Backup & Restore
 In case we break our installation we want a backup and restore solution
 [Timeshift](https://github.com/teejee2008/timeshift)
 
@@ -103,7 +116,6 @@ Safe and close
 :wq
 ```
 
-
 #### Installing packages
 https://aur.archlinux.org/
 
@@ -119,20 +131,25 @@ $ cat PKGBUILD
 $ makepkg -si
 ```
 
+## Additional software
 
-### file manager
+### Gaming packages
+Install drivers see lutris page:
+https://github.com/lutris/docs/blob/master/InstallingDrivers.md
+https://github.com/lutris/docs/blob/master/WineDependencies.md
+
 ```
-sudo pacman -S nemo
-sudo pacman -S ntfs-3g
-mkdir Pictures
-mv Background.jpg /home/johan/Pictures
-sudo pacman -S deepin-screenshot
+sudo pacman -S lutris
+sudo pacman -S steam
 ```
 
 ### keepassxc
 ```
 sudo pacman -S keepassxc
 ```
+
+
+
 
 
 
