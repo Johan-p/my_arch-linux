@@ -49,7 +49,6 @@ mkdir Pictures
 mv Background.jpg /home/johan/Pictures
 ```
 
-
 ### Screenshot util
 The i3 config file this util is bound to the print screen button
 
@@ -71,6 +70,7 @@ cp .Xdefaults ~/.Xdefaults
 cp .urxvt/ext/solarized ~/.urxvt/ext/solarized
 cp .xinitrc ~/.xinitrc
 ```
+
 ### urxvt-solarized
 Terminal config files and extensions
 
@@ -78,6 +78,7 @@ Dark and light color scheme for urxvt, including easy toggling between them, sup
 
 [urxvt](https://wiki.archlinux.org/title/rxvt-unicode)
 [Solarized](http://ethanschoonover.com/solarized) 
+
 
 #### refresh i3
 Super + shift + r
