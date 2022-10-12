@@ -1,6 +1,7 @@
-## Installing desktop
+# Installing the desktop
 
-### I3 and desktop utils
+
+## I3 and desktop utils
 https://i3wm.org/docs/userguide.html
 
 * i3 tiling window manager 
@@ -16,14 +17,14 @@ $ sudo pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings
 $ sudo pacman -S ttf-font-awesome awesome-terminal-fonts neofetch
 ```
 
-AMD drivers: for Intel or Nvidia drivers see Arch wiki
+### AMD drivers: for Intel or Nvidia drivers see Arch wiki
 
 ```
 $ sudo pacman -S amd-ucode
 $ sudo pacman -S xf86-video-amdgpu
 ```
 
-Browser
+### Browser
 
 ```
 $ sudo pacman -S firefox
@@ -35,8 +36,9 @@ startx
 ```
 follow the stetup instructionss and open a terminal afterwards super + enter
 
+
+Create a `urxvt` extension folder and copy the dot files over.
 ```
-Create a `urxvt` extension folder:
 $ mkdir -p ~/.urxvt/ext
 git clone repo-link
 cd my_arch-linux
@@ -48,7 +50,7 @@ cp .urxvt/ext/solarized ~/.urxvt/ext/solarized
 cp .xinitrc ~/.xinitrc
 ```
 
-refresh i3
+##### refresh i3
 Super + shift + r
 
 #### urxvt-solarized
@@ -62,7 +64,7 @@ dark and light color scheme for urxvt, including easy toggling between them.
 $mod + c
 
 
-### Gaming
+### Gaming packages
 Install drivers see lutris page:
 https://github.com/lutris/docs/blob/master/InstallingDrivers.md
 https://github.com/lutris/docs/blob/master/WineDependencies.md
@@ -126,6 +128,7 @@ mkdir Pictures
 mv Background.jpg /home/johan/Pictures
 sudo pacman -S deepin-screenshot
 ```
+
 ### keepassxc
 ```
 sudo pacman -S keepassxc
@@ -151,20 +154,16 @@ sudo pacman -S keepassxc
 
 # -left off here-
 
-# lock screen setup
+### lock screen setup
 To finish
-
-
 
 ```
 $ sudo systemctl enable lightdm
 ```
+
 
 ### possible add-ons
 
 ```
 $ sudo pacman -S network-manager-applet 
 ```
-
-
-
