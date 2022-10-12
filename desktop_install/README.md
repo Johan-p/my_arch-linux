@@ -72,12 +72,37 @@ cp .xinitrc ~/.xinitrc
 ```
 
 ### urxvt-solarized
+Solarized
+=========
+
+## Precision colors for machines and people
+
+[urxvt](https://wiki.archlinux.org/title/rxvt-unicode)
+
+[Solarized](http://ethanschoonover.com/solarized) 
+
+[![solarized dualmode](https://github.com/altercation/solarized/raw/master/img/solarized-yinyang.png)](#features)
+
+Solarized is a sixteen color palette (eight monotones, eight accent colors)
+designed for use with terminal and gui applications. It has several [unique
+properties](#features). I designed this colorscheme with both precise
+[CIELAB](http://en.wikipedia.org/wiki/Lab_color_space) lightness relationships
+and a refined set of hues based on fixed color wheel relationships. It has been
+tested extensively in real world use on color calibrated displays (as well as
+uncalibrated/intentionally miscalibrated displays) and in a variety of lighting
+conditions.
+
+***See the [changelog] for what's new in the most recent release.***
+
+![solarized palette](https://github.com/altercation/solarized/raw/master/img/solarized-palette.png)
+
+![solarized vim](https://github.com/altercation/solarized/raw/master/img/solarized-vim.png)
+
 Terminal config files and extensions
 
 Dark and light color scheme for urxvt, including easy toggling between them, super + c
 
-[urxvt](https://wiki.archlinux.org/title/rxvt-unicode)
-[Solarized](http://ethanschoonover.com/solarized) 
+
 
 
 #### refresh i3
