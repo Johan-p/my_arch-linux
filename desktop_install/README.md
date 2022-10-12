@@ -24,6 +24,43 @@ $ sudo pacman -S firefox
 Create a `urxvt` extension folder:
 $ mkdir -p ~/.urxvt/ext
 ```
+
+# Timeshift
+[See Timeshift repo](https://github.com/teejee2008/timeshift)
+
+Will use the AUR package:
+
+https://aur.archlinux.org/packages/timeshift
+
+
+# AUR
+One time settings to enable AUR packages
+
+#### Setup
+
+$ sudo pacman -S --needed base-devel git vim
+$ sudo vim /etc/makepkg.conf
+
+-- change MAKEFLAGS to the following line --
+
+MAKEFLAGS="-j$(nproc)"
+
+:wq
+
+#### Installing packages
+https://aur.archlinux.org/
+
+
+$ git clone https://aur.archlinux.org/timeshift.git
+
+Always checkc the build file before running the code:
+
+$ cat PKGBUILD
+
+$ makepkg -si
+
+
+
 # file manager
 ```
 sudo pacman -S nemo
@@ -64,11 +101,22 @@ mv config ~/.config/i3/config
 $mod shift r
 ```
 
-# Timeshift
-[See Timeshift repo](https://github.com/teejee2008/timeshift)
-## -to update-
-add build instructions
-## -to update-
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 # -left off here-
@@ -89,25 +137,4 @@ $ sudo pacman -S network-manager-applet
 ```
 
 
-# AUR
-Manual steps for AUR packages
-
-#### Setup
-```
-$ sudo pacman -S --needed base-devel git vim
-$ sudo vim /etc/makepkg.conf
--- change MAKEFLAGS to the following line --
-MAKEFLAGS="-j$(nproc)"
--------------------------------
-:wq
-```
-
-#### Installing packages
-https://aur.archlinux.org/
-
-```
-$ git clone link
-$ cat PKGBUILD
-$ makepkg -si
-```
 
