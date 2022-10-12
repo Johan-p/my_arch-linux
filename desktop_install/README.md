@@ -71,7 +71,7 @@ cp .urxvt/ext/solarized ~/.urxvt/ext/solarized
 cp .xinitrc ~/.xinitrc
 ```
 
-##### refresh i3
+#### refresh i3
 Super + shift + r
 
 #### urxvt-solarized
