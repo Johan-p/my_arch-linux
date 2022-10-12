@@ -29,15 +29,48 @@ Browser
 $ sudo pacman -S firefox
 ```
 
-Terminal config files and extensions
+### start-up i3
+```
+startx
+```
+follow the stetup instructionss and open a terminal afterwards super + enter
 
 ```
 Create a `urxvt` extension folder:
 $ mkdir -p ~/.urxvt/ext
+git clone repo-link
+cd my_arch-linux
+cp .bassh_profile ~/.bash_profile
+cp .bashrc ~/.bashrc
+cp config ~/.config/i3/config
+cp .Xdefaults ~/.Xdefaults
+cp .urxvt/ext/solarized ~/.urxvt/ext/solarized
+cp .xinitrc ~/.xinitrc
 ```
 
-# todo: add instructions for copy location dot files
+refresh i3
+Super + shift + r
 
+#### urxvt-solarized
+Terminal config files and extensions
+
+[urxvt](https://wiki.archlinux.org/title/rxvt-unicode)
+[Solarized](http://ethanschoonover.com/solarized) 
+
+dark and light color scheme for urxvt, including easy toggling between them.
+
+$mod + c
+
+
+### Gaming
+Install drivers see lutris page:
+https://github.com/lutris/docs/blob/master/InstallingDrivers.md
+https://github.com/lutris/docs/blob/master/WineDependencies.md
+
+```
+sudo pacman -S lutris
+sudo pacman -S steam
+```
 
 ### Timeshift Backup & Restore
 In case we break our installation we want a backup and restore solution
@@ -48,10 +81,10 @@ Will use the AUR package:
 https://aur.archlinux.org/packages/timeshift
 
 
-# AUR
+#### AUR
 One time settings to enable AUR packages
 
-#### Setup
+##### Setup
 ```
 $ sudo pacman -S --needed base-devel git vim
 $ sudo vim /etc/makepkg.conf
@@ -85,7 +118,7 @@ $ makepkg -si
 ```
 
 
-# file manager
+### file manager
 ```
 sudo pacman -S nemo
 sudo pacman -S ntfs-3g
@@ -93,36 +126,9 @@ mkdir Pictures
 mv Background.jpg /home/johan/Pictures
 sudo pacman -S deepin-screenshot
 ```
-## keepassxc
+### keepassxc
 ```
 sudo pacman -S keepassxc
-```
-
-## start-up i3
-```
-startx
-```
-# Gaming
-Install drivers see lutris page:
-https://github.com/lutris/docs/blob/master/InstallingDrivers.md
-https://github.com/lutris/docs/blob/master/WineDependencies.md
-
-```
-sudo pacman -S lutris
-sudo pacman -S steam
-```
-
-# urxvt-solarized
-[urxvt](https://wiki.archlinux.org/title/rxvt-unicode)
-[Solarized](http://ethanschoonover.com/solarized) 
-dark and light color scheme for urxvt, including easy toggling between them.
-$mod + c
-
-# -- add script to move all dot files in place --
-```
-cp .bashrc ~/.bashrc
-mv config ~/.config/i3/config
-$mod shift r
 ```
 
 
