@@ -24,8 +24,13 @@ $ sudo pacman -S amd-ucode
 $ sudo pacman -S xf86-video-amdgpu
 ```
 
-### Browser
+### start-up i3
+```
+startx
+```
+follow the stetup instructionss and open a terminal afterwards super + enter to continue the installation
 
+### Browser
 ```
 $ sudo pacman -S firefox
 ```
@@ -52,15 +57,7 @@ The i3 config file this util is bound to the print screen button
 sudo pacman -S deepin-screenshot
 ```
 
-
-
-### start-up i3
-```
-startx
-```
-follow the stetup instructionss and open a terminal afterwards super + enter
-
-
+### Dotfiles
 Create a `urxvt` extension folder and copy the dot files over.
 ```
 $ mkdir -p ~/.urxvt/ext
