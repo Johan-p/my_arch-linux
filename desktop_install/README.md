@@ -73,7 +73,9 @@ cp .xinitrc ~/.xinitrc
 ```
 ### urxvt-solarized
 Terminal config files and extensions
+
 Dark and light color scheme for urxvt, including easy toggling between them, super + c
+
 [urxvt](https://wiki.archlinux.org/title/rxvt-unicode)
 [Solarized](http://ethanschoonover.com/solarized) 
 
