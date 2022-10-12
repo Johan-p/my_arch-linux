@@ -134,7 +134,9 @@ $ makepkg -si
 
 ### Gaming packages
 Install drivers see lutris page:
+
 https://github.com/lutris/docs/blob/master/InstallingDrivers.md
+
 https://github.com/lutris/docs/blob/master/WineDependencies.md
 
 ```
