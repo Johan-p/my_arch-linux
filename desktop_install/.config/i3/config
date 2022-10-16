@@ -201,8 +201,8 @@ bindsym $mod+r mode "resize"
 #######################################################
 
 #lock screen
-#bindsym $mod+Shift+l exec i3lock --image /home/johan/Pictures/Lockscreen.png
-bindsym $mod+Shift+l exec dm-tool lock
+bindsym $mod+Shift+l exec i3lock --image /home/johan/Pictures/Lockscreen.png
+#bindsym $mod+Shift+l exec dm-tool lock
 
 #background image
 exec_always feh --bg-scale /home/johan/Pictures/Background.jpg
