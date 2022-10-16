@@ -11,6 +11,7 @@ cp ~/.urxvt/ext/solarized /home/johan/Documents/my_arch-linux/desktop_install/.u
 echo "Copied urxvt extension scripts"
 cp ~/.xinitrc /home/johan/Documents/my_arch-linux/desktop_install/.xinitrc
 echo "Copied xinitrc"
-#git add .
-#git commit -m "update to dotfiles"
-#git push
+cd /home/johan/Documents/my_arch-linux
+git add .
+git commit -m "update to dotfiles"
+git push
