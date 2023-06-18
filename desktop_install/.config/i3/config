@@ -161,7 +161,7 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 assign [class="firefox"] $ws1
 assign [class="Thunderbird"] $ws2
 assign [class="KeePassXC"] $ws3
-assign [class="Steam"] $ws4
+assign [class="steam"] $ws4
 assign [class="Lutris"] $ws5
 assign [class="steam_app_1284210"] $ws5
 assign [class="Spotify"] $ws8
